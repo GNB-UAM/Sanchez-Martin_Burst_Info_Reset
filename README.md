@@ -24,4 +24,4 @@ To recreate each figure run the corresponding script in the Figures folder like:
 
 ## License
 Source code (python files): Licensed under the GNU GPL v3.0. See the LICENSE file for details.
-Generated data (Data file .pkl and images): Licensed under the Creative Commons Attribution 4.0 International License (CC BY-NC-SA 4.0). For the full legal text, see: https://creativecommons.org/licenses/by/4.0/deed.en
+Generated data (Data file .pkl and images): Licensed under the Creative Commons Attribution 4.0 International License (CC BY 4.0). For the full legal text, see: https://creativecommons.org/licenses/by/4.0/deed.en
