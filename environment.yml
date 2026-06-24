@@ -8,3 +8,5 @@ dependencies:
   - pandas=3.0.1
   - scipy=1.17.1
   - matplotlib=3.10.8
+  - h5py=3.16.0
+  - cython=3.2.5
