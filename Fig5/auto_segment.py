@@ -268,8 +268,9 @@ for c in all_chunks:
 n_exps = 100
 df_chunks = (
     df_chunks[df_chunks["chunk number"].isin([1, 2])]
+    .sort_values("R2", ascending=False)# This sorts the segments ascedning by R²
     .groupby("chunk number", group_keys=False)
-    .apply(lambda x: x.nlargest(n_exps, "R2"))
+    .head(n_exps)#Then take only the head (highest)
     .reset_index(drop=True)
 )
 
