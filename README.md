@@ -125,19 +125,19 @@ Each figure script lives in its own `Fig*/` folder and reads the `.pkl` and `h5`
 ```bash
 # Fig 6
 cd Fig6
-python3 pyloric_plot_voltage.py ../pyloric_model/simulation_circuit0_ramp_ABPD_amp0.00010-desc-15_dur140s_data.pkl
+python3 pyloric_plot_voltage.py ../simulation_circuit0_ramp_ABPD_amp0.00010-desc-15_dur140s_data.pkl
 
 # Fig 7
 cd ../Fig7
 python3 pyloric_plot_pairplots.py \
-    --pkl-mod   ../pyloric_model/simulation_circuit0_ramp_ABPD_amp0.00010-desc-15_dur140s_data.pkl \
-    --pkl-nomod ../pyloric_model/simulation_circuit0_noIext_data.pkl
+    --pkl-mod   ../simulation_circuit0_ramp_ABPD_amp0.00010-desc-15_dur140s_data.pkl \
+    --pkl-nomod ../simulation_circuit0_noIext_data.pkl
 
 # Fig 8
 cd ../Fig8
 python3 pyloric_plot_r2_shift.py \
-    --pkl-mod   ../pyloric_model/simulation_circuit0_ramp_ABPD_amp0.00010-desc-15_dur140s_data.pkl \
-    --pkl-nomod ../pyloric_model/simulation_circuit0_noIext_data.pkl
+    --pkl-mod   ../simulation_circuit0_ramp_ABPD_amp0.00010-desc-15_dur140s_data.pkl \
+    --pkl-nomod ../simulation_circuit0_noIext_data.pkl
 
 # Fig 9
 cd ../Fig9
