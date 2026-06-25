@@ -9,7 +9,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 from scipy.stats import linregress
 from scipy.ndimage import uniform_filter1d, median_filter
-import seaborn as sns
+
 
 #GENERAL CONSTANTS
 plt.rcParams.update({'font.size': 20})#Consistent fontsize for all figures
