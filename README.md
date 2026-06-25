@@ -62,24 +62,24 @@ To reproduce the figures from the paper, follow these steps.
 │   │   └── trend.py
 │   ├── Fig4/
 │   │   └── exp_trends.py
-│   ├── Fig5/
-│   │   └── auto_segment.py
-├── pyloric_model/
-|	├── interface.py
-│   ├── run_pyloric.py
-│   ├── pyloric_data.py
-│   ├── pyloric_iext.py
-│   ├── pyloric_currents.py
-│   ├── close_to_xo_circuit_parameters_min_burst_condition_078.pkl
-│   └── (generated .h5 / .pkl files)
-│   ├── Fig6/
-│   │   └── pyloric_plot_voltage.py
-│   ├── Fig7/
-│   │   └── pyloric_plot_pairplots.py
-│   ├── Fig8/
-│   │   └── pyloric_plot_r2_shift.py
-│   └── Fig9/
-│       └── pyloric_plot_currents.py
+│   └── Fig5/
+│       └── auto_segment.py
+└── pyloric_model/
+ 	├── interface.py
+    ├── run_pyloric.py
+    ├── pyloric_data.py
+    ├── pyloric_iext.py
+    ├── pyloric_currents.py
+    ├── close_to_xo_circuit_parameters_min_burst_condition_078.pkl
+    └── (generated .h5 / .pkl files)
+    ├── Fig6/
+    │    └── pyloric_plot_voltage.py
+    ├── Fig7/
+    │    └── pyloric_plot_pairplots.py
+    ├── Fig8/
+    │    └── pyloric_plot_r2_shift.py
+    └── Fig9/
+        └── pyloric_plot_currents.py
 ```
 
 ##### 1. Generate the voltage and current data (.h5 files)
