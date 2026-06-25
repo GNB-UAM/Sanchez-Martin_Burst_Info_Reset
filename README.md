@@ -11,7 +11,7 @@ Load and activate conda environment from environment.yml file with the following
 	conda activate info_reset
 
 ### Experimental analysis
-The detection of spikes and bursts is stored in spikes_data.pkl while intervals_data.pkl has the calculation of intervals considering those burst references (first and last spike of each neuron). All the scripts use the intervals_data.pkl file in the main folder.
+The detection of spikes and bursts (first and last spike of each neurons) is stored in spikes_data.pkl while intervals_data.pkl has the calculation of intervals considering those burst references (run "calculate_intervals.py" to recreate those intervals from the spikes). All the scripts use the intervals_data.pkl file in the main folder.
 
 To recreate each figure run the corresponding script in the Figures folder like:
 
@@ -48,6 +48,22 @@ To reproduce the figures from the paper, follow these steps.
 .
 ├── environment.yaml
 ├── README.md
+├── experimental_analysis/
+|	├── calculate_intervals.py
+│   ├── intervals_data.pkl
+│   ├── spikes_data.pkl
+│   ├── Fig1/
+│   │   └── intervals_two_cycles.csv
+│   │   └── intervals.py
+│   │   └── invariants.py
+│   ├── Fig2/
+│   │   └── pairplots.py
+│   ├── Fig3/
+│   │   └── trend.py
+│   ├── Fig4/
+│   │   └── exp_trends.py
+│   ├── Fig5/
+│   │   └── auto_segment.py
 ├── pyloric_model/
 |	├── interface.py
 │   ├── run_pyloric.py
@@ -56,14 +72,14 @@ To reproduce the figures from the paper, follow these steps.
 │   ├── pyloric_currents.py
 │   ├── close_to_xo_circuit_parameters_min_burst_condition_078.pkl
 │   └── (generated .h5 / .pkl files)
-├── Fig6/
-│   └── pyloric_plot_voltage.py
-├── Fig7/
-│   └── pyloric_plot_pairplots.py
-├── Fig8/
-│   └── pyloric_plot_r2_shift.py
-└── Fig9/
-    └── pyloric_plot_currents.py
+│   ├── Fig6/
+│   │   └── pyloric_plot_voltage.py
+│   ├── Fig7/
+│   │   └── pyloric_plot_pairplots.py
+│   ├── Fig8/
+│   │   └── pyloric_plot_r2_shift.py
+│   └── Fig9/
+│       └── pyloric_plot_currents.py
 ```
 
 ##### 1. Generate the voltage and current data (.h5 files)
