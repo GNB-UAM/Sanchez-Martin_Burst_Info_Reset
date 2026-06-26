@@ -84,7 +84,7 @@ To reproduce the figures from the paper, follow these steps.
 
 ##### 1. Generate the voltage and current data (.h5 files)
 
-Run `run_pyloric.py` from `pyloric_model/`, once per condition:
+Run `run_pyloric.py` from `pyloric_model/`, once per condition. Un-comment the corresponding part of the run_pyloric.py script:
 
 **Without modulation**:
 ```python
