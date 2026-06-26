@@ -11,12 +11,27 @@ Load and activate conda environment from environment.yml file with the following
 	conda activate info_reset
 
 ### Experimental analysis
-The detection of spikes and bursts (first and last spike of each neurons) is stored in spikes_data.pkl while intervals_data.pkl has the calculation of intervals considering those burst references (run "calculate_intervals.py" to recreate those intervals from the spikes). All the scripts use the intervals_data.pkl file in the main folder.
+The detection of spikes and bursts (first and last spike of each neurons) is stored in spikes_data.pkl while intervals_data.pkl has the calculation of intervals considering those burst references (run "calculate_intervals.py" to recreate those intervals from the spike timings). All the scripts use the intervals_data.pkl file in the main folder.
 
-To recreate each figure run the corresponding script in the Figures folder like:
+Each figure script lives in its own `Fig*/` folder and reads the `intervals_data.pkl` from `experimental_analysis/` (one level up):
 
-	python3 invariants.py
-	
+```bash
+cd Fig1
+python3 intervals.py
+python3 invariants.py
+
+cd ../Fig2
+python3 pairplots.py
+
+cd ../Fig3
+python3 trend.py
+
+cd ../Fig4
+python3 exp_trends.py
+
+cd ../Fig5
+python3 auto_segment.py
+```
 
 ### Computational analysis
 
