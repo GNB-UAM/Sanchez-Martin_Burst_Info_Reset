@@ -145,7 +145,7 @@ python3 pyloric_plot_currents.py
 ```
 
 > `pyloric_plot_currents.py` defaults to reading
-> `../pyloric_model/simulation_circuit0_ramp_ABPD_amp0.00010-desc-15_dur140s_data.pkl`
+> `../simulation_circuit0_ramp_ABPD_amp0.00010-desc-15_dur140s_data.pkl`
 > (the modulated condition), so no argument is needed if the file is in that
 > location. Pass a path explicitly to use a different `.pkl`.
 
